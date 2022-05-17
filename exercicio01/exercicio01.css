@@ -1,0 +1,40 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    width: 100%;
+}
+.container{
+    padding: 2%;
+}
+.div1{
+    width: 25%;
+    float: left;
+    display: none;
+    border-radius: 15px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.yellow{
+    background-color: rgb(255, 145, 0);
+}
+.green{
+    background-color: rgb(4, 253, 66);
+}
+.blue{
+    background-color: rgb(0, 102, 255);
+}
+.pink{
+    background-color: rgb(255, 0, 255);
+}
+.list ul{
+    margin: 10%;
+    list-style-type: none;
+}
+.list li{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
