@@ -84,6 +84,12 @@ button{
 #list li button{
     background-color: rgba(255, 255, 255, 0);
 }
+#list li:nth-child(odd){
+    background-color: #eee;
+}
+#list li:nth-child(even){
+    background-color: #888;
+}
 .delete{
     
 }

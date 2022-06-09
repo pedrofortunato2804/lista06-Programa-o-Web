@@ -6,7 +6,7 @@ toDoButton.onclick = () => {
 
     var contentList = li.innerHTML = `
         <span> ${inputContent} </span>
-        <i class="delete fa-regular fa-trash-can" id="deleteBtn" onClick= "deletebtn"></i>`;
+        <button><i class="delete fa-regular fa-trash-can" id="deleteBtn" onClick= "deletebtn"></i></button>`;
     var t = document.createTextNode(inputContent);
     if(inputContent === ""){
         alert("Insira alguma tarefa!");
