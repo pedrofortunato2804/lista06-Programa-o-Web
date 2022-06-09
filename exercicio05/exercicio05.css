@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+}
+.container{
+    display: grid; 
+
+   grid-template-rows: (4, 1fr);
+   grid-template-columns: (5, 1fr);
+   
+   gap: 10px;
+   height: 100%;
+}
+.div1{
+    background-color: #fff; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 6;
+    text-align: center;
+ }
+.div2{
+    background-color: #fff; 
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 2;
+    height: 60vh;
+    border: 1px solid #000;
+ }
+ .div2>.estilo1{
+    background-color: #fff;
+    height: 10vh;
+    text-align: center;
+    padding-top: 10px;
+}
+.div2>.estilo2{
+    background-color: #fff;
+    height: 30vh;
+    text-align: center;
+}
+.div2>.estilo3{
+    background-color: #888;
+    height: 1vh;
+}
+ .div2>.estilo4{
+     background-color: #000;
+     height: 19vh;
+     color: #fff;
+     text-align: center;
+     padding-top: 50px;
+ }
+ .div2>.estilo4 #nome{
+     font-size: 30pt;
+ }
+
+
+ .div3{
+    background-color: #fff; 
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 4;
+    grid-column-end: 3;
+    height: 60vh;
+    border: 1px solid #000;
+ }
+ .div3>.estilo1{
+    background-color: rgb(203, 66, 66);
+    font-weight: 1000;
+    font-size: 15pt;
+    color: #fff;
+    height: 10vh;
+    text-align: center;
+    padding-top: 10px;
+}
+.div3>.estilo2{
+    background-color: #fff;
+    height: 30vh;
+    text-align: center;
+    padding-top: 15px;
+}
+.div3>.estilo3{
+    background-color: rgb(164, 50, 50);
+    height: 1vh;
+}
+ .div3>.estilo4{
+     background-color: rgb(203, 66, 66);
+     height: 19vh;
+     color: #fff;
+     text-align: center;
+     padding-top: 50px;
+ }
+ .div3>.estilo4 #nome2{
+     font-size: 30pt;
+ }
+
+
+.div4{
+    background-image: linear-gradient(red, yellow, blue);
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-row-end: 4;
+    grid-column-end: 4; 
+    height: 60vh;
+    border: 1px solid #000;
+ }
+ .div4>.estilo1{
+    background-color: rgba(0, 0, 0, 0);
+    height: 10vh;
+    text-align: center;
+    padding-top: 10px;
+}
+.div4>.estilo2{
+    background-color: #fff;
+    height: 30vh;
+    text-align: center;
+}
+.div4>.estilo3{
+    background-color: #888;
+    height: 1vh;
+}
+ .div4>.estilo4{
+     background-color: #000;
+     height: 19vh;
+     color: #fff;
+     text-align: center;
+     padding-top: 50px;
+ }
+ .div3>.estilo4 #nome3{
+     font-size: 30pt;
+ }
