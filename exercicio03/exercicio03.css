@@ -26,6 +26,7 @@ body{
 .input{
     display: flex;
     justify-content: center;
+    padding: 5px;
     background-color: rgb(211, 211, 211);
 }
 .input input{
@@ -42,15 +43,47 @@ button{
     font-size: 20pt;
     cursor: pointer;
 }
-.task-item{
+#list{
+    margin: 0;
+    padding: 0;
+}
+#list li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 20pt;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 6px;
-    margin-top: 6px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20pt;
+}   
+
+#list li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+
+#list li.checked::before {
+    content: '';
+    position: relative;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
 }
-.completed{
-    background-color: aqua;
+#list li button{
+    background-color: rgba(255, 255, 255, 0);
+}
+.delete{
+    
 }

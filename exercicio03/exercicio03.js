@@ -1,47 +1,33 @@
-const inputElement = document.getElementById('inputContent');
-const addTask = document.getElementById('toDoButton');
+var list = document.getElementById("list");
 
-const tasksContainer = document.getElementById('toDo');
+toDoButton.onclick = () => {
+    var inputContent = document.getElementById("inputContent").value;
+    var li = document.createElement("li");
 
-const validateInput = () => inputElement.value.trim().length > 0;
-
-const tasksValidate = () => {
-    const inputIsValid = validateInput();
-
-    if(!inputIsValid){
-        alert("Digite uma tarefa!")
+    var contentList = li.innerHTML = `
+        <span> ${inputContent} </span>
+        <i class="delete fa-regular fa-trash-can" id="deleteBtn" onClick= "deletebtn"></i>`;
+    var t = document.createTextNode(inputContent);
+    if(inputContent === ""){
+        alert("Insira alguma tarefa!");
+    }else{
+        document.getElementById("list").appendChild(li);
     }
 
-    const taskItemContainer = document.createElement('div');
-    taskItemContainer.classList.add('task-item');
+    document.getElementById("inputContent").value = "";
+}
 
-    const taskContent = document.createElement('p')
-    taskContent.innerHTML = inputElement.value;
-
-    taskContent.addEventListener('click', () => clickAdd());
-
-    const deleteItem = document.createElement('i');
-    deleteItem.classList.add('fa-regular');
-    deleteItem.classList.add('fa-trash-can');
-
-    deleteItem.addEventListener('click', () => clickDelete());
-
-    taskItemContainer.appendChild(taskContent);
-    taskItemContainer.appendChild(deleteItem);
-
-    tasksContainer.appendChild(taskItemContainer);
-
-    inputElement.value = "";
-};
-
-const clickAdd = (taskContent) =>{
-    const tasks = tasksContainer.childNodes;
-
-    for (const task of tasks){
-        if(task.firstChild.isSameNode(taskContent)){
-            task.firstChild.classList.toggle("completed");
-        }
+var deletebtn = document.getElementsByClassName("delete");
+for(var i = 0; i < deletebtn.length; i++){
+    deletebtn[i].onclick = () => {
+        var div = this.parentElement;
+        div.style.display = "none"
     }
 }
 
-addTask.addEventListener("click", () => tasksValidate());
+var listA = document.querySelector('ul');
+listA.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
