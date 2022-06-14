@@ -54,6 +54,16 @@ input[type="file"]{
 .div2>.estilo1 p{
     cursor: pointer;
 }
+.div2>.estilo1 #btn-submit{
+    cursor: pointer;
+    border: none;
+    width: 25px;
+}
+.div2>.estilo1 #btn-submit:hover{
+    background-color: #0b9c95;
+    color: #fff;
+    transition: 0.4s;
+}
 .div2>.estilo2{
     height: 30vh;
     text-align: center;

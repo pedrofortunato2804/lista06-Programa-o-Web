@@ -20,6 +20,12 @@ inputLogo.addEventListener('change', (ev) => {
     reader.readAsDataURL(inputLogo.files[0]);
 });
 
-var companyName = document.getElementById("empresa");
-var inputContent = document.getElementById("empresa").value; 
+var btnSubmit = document.getElementById("btn-submit");
+
+btnSubmit.addEventListener('click', () => {
+    var content = document.getElementById("empresa").value;
+    var inputSubmit = document.getElementById('divInp');
+
+    console.log(content);
+});
 
