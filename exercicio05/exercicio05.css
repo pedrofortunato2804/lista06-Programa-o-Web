@@ -7,6 +7,9 @@
 body{
     width: 100%;
 }
+input[type="file"]{
+    display: none;
+}
 .container{
     display: grid; 
 
@@ -25,33 +28,40 @@ body{
     text-align: center;
  }
 .div2{
-    background-color: #fff; 
+    background: linear-gradient(#0b9c95, #5DD9C1, #ACFCD9); 
     grid-row-start: 2;
     grid-column-start: 2;
     grid-row-end: 4;
     grid-column-end: 2;
-    height: 60vh;
+    height: 80vh;
     border: 1px solid #000;
+    border-radius: 15px;
  }
  .div2>.estilo1{
-    background-color: #fff;
-    height: 10vh;
+    height: 20vh;
     text-align: center;
     padding-top: 10px;
+    font-weight: 1000;
+    font-size: 15pt;
+}
+.div2>.estilo1 label{
+    cursor: pointer;
+}
+.div2>.estilo1 img{
+    width: 50%;
+    height: 50%;
+}
+.div2>.estilo1 p{
+    cursor: pointer;
 }
 .div2>.estilo2{
-    background-color: #fff;
     height: 30vh;
     text-align: center;
-}
-.div2>.estilo3{
-    background-color: #888;
-    height: 1vh;
+    padding-top: 15px;
 }
  .div2>.estilo4{
-     background-color: #000;
-     height: 19vh;
-     color: #fff;
+     height: 20vh;
+     color: #000;
      text-align: center;
      padding-top: 50px;
  }
@@ -61,37 +71,31 @@ body{
 
 
  .div3{
-    background-color: #fff; 
+    background: linear-gradient(#BC9EC1, #E3BAC6, #FDE8E9); 
     grid-row-start: 2;
     grid-column-start: 3;
     grid-row-end: 4;
     grid-column-end: 3;
-    height: 60vh;
+    height: 80vh;
     border: 1px solid #000;
+    border-radius: 15px;
  }
  .div3>.estilo1{
-    background-color: rgb(203, 66, 66);
     font-weight: 1000;
     font-size: 15pt;
-    color: #fff;
-    height: 10vh;
+    color: rgb(89, 78, 78);
+    height: 20vh;
     text-align: center;
     padding-top: 10px;
 }
 .div3>.estilo2{
-    background-color: #fff;
     height: 30vh;
     text-align: center;
     padding-top: 15px;
 }
-.div3>.estilo3{
-    background-color: rgb(164, 50, 50);
-    height: 1vh;
-}
  .div3>.estilo4{
-     background-color: rgb(203, 66, 66);
-     height: 19vh;
-     color: #fff;
+     height: 30;
+     color: rgb(89, 78, 78);
      text-align: center;
      padding-top: 50px;
  }
@@ -101,36 +105,37 @@ body{
 
 
 .div4{
-    background-image: linear-gradient(red, yellow, blue);
+    background-image: linear-gradient(#392061, #822E81, #AA6373);
     grid-row-start: 2;
     grid-column-start: 4;
     grid-row-end: 4;
     grid-column-end: 4; 
-    height: 60vh;
+    height: 80vh;
     border: 1px solid #000;
+    border-radius: 15px;
  }
  .div4>.estilo1{
     background-color: rgba(0, 0, 0, 0);
-    height: 10vh;
+    height: 20vh;
     text-align: center;
     padding-top: 10px;
+    font-weight: 1000;
+    font-size: 15pt;
+    color: #fff;
 }
 .div4>.estilo2{
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0);
     height: 30vh;
     text-align: center;
-}
-.div4>.estilo3{
-    background-color: #888;
-    height: 1vh;
+    padding-top: 15px;
 }
  .div4>.estilo4{
-     background-color: #000;
-     height: 19vh;
+     background-color: rgba(0, 0, 0, 0);
+     height: 30vh;
      color: #fff;
      text-align: center;
      padding-top: 50px;
  }
- .div3>.estilo4 #nome3{
+ .div4>.estilo4 #nome3{
      font-size: 30pt;
  }
